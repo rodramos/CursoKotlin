@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculando Média"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <EditText
+        android:id="@+id/edtNota1"
+        android:layout_width="351dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Nota 1"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edtNota4"
+        android:layout_width="351dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nota 4"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNota3" />
+
+    <EditText
+        android:id="@+id/edtNota3"
+        android:layout_width="351dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nota 3"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNota2" />
+
+    <EditText
+        android:id="@+id/edtNota2"
+        android:layout_width="351dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nota 2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNota1" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Calcular Média"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNota4" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Limpar Campos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="91dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="Sair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLimpar" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNota4">
+
+        <RadioButton
+            android:id="@+id/rdbEtim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etim" />
+
+        <RadioButton
+            android:id="@+id/rdbMedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medio" />
+
+        <RadioButton
+            android:id="@+id/rdbMtec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M-Tec" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
